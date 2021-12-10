@@ -1,0 +1,7 @@
+{
+  "name": "terence-waters-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
