@@ -1,20 +1,6 @@
 /* Adds Helvetica Neue to the project */
 
 @font-face {
-  font-family: 'Helvetica Neue';
-  src: url('../assets/fonts/HelveticaNeue.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Helvetica Neue Bold';
-  src: url('../assets/fonts/HelveticaNeueBd.ttf') format('truetype');
-  font-weight: 500;
-  font-style: bold;
-}
-
-@font-face {
   font-family: 'Helvetica Neue Light';
   src: url('../assets/fonts/HelveticaNeueLt.ttf') format('truetype');
   font-weight: 200;
@@ -28,8 +14,22 @@
 }
 
 @font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../assets/fonts/HelveticaNeue.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Helvetica Neue Medium';
   src: url('../assets/fonts/HelveticaNeueMed.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Bold';
+  src: url('../assets/fonts/HelveticaNeueBd.ttf') format('truetype');
+  font-weight: 500;
+  font-style: bold;
 }
