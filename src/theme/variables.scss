@@ -3,6 +3,9 @@ http://ionicframework.com/docs/theming/ */
 
 /** Ionic CSS Variables **/
 :root {
+  /** typography **/
+  --ion-font-family: 'Roboto', 'Helvetica Neue', 'Arial', 'Verdana', sans-serif;
+
   /** primary **/
   --ion-color-primary: #445f7e;
 	--ion-color-primary-rgb: 68,95,126;
