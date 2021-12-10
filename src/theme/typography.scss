@@ -1,7 +1,35 @@
 /* Adds Helvetica Neue to the project */
 
-@include font-face('Helvetica Neue', '../../public/assets/fonts/HelveticaNeue', null, null, ttf);
-@include font-face('Helvetica Neue Bold', '../../public/assets/fonts/HelveticaNeueBd', null, null, ttf);
-@include font-face('Helvetica Neue Light', '../../public/assets/fonts/HelveticaNeueLt', null, null, ttf);
-@include font-face('Helvetica Neue Light Italic', '../../public/assets/fonts/HelveticaNeueLtItalic', null, null, ttf);
-@include font-face('Helvetica Neue Medium', '../../public/assets/fonts/HelveticaNeueMed', null, null, ttf);
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../assets/fonts/HelveticaNeue.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Bold';
+  src: url('../assets/fonts/HelveticaNeueBd.ttf') format('truetype');
+  font-weight: 500;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Light';
+  src: url('../assets/fonts/HelveticaNeueLt.ttf') format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Light Italic';
+  src: url('../assets/fonts/HelveticaNeueLtItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Medium';
+  src: url('../assets/fonts/HelveticaNeueMed.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
