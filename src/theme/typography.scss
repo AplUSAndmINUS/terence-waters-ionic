@@ -1,0 +1,7 @@
+/* Adds Helvetica Neue to the project */
+
+@include font-face('Helvetica Neue', '../../public/assets/fonts/HelveticaNeue', null, null, ttf);
+@include font-face('Helvetica Neue Bold', '../../public/assets/fonts/HelveticaNeueBd', null, null, ttf);
+@include font-face('Helvetica Neue Light', '../../public/assets/fonts/HelveticaNeueLt', null, null, ttf);
+@include font-face('Helvetica Neue Light Italic', '../../public/assets/fonts/HelveticaNeueLtItalic', null, null, ttf);
+@include font-face('Helvetica Neue Medium', '../../public/assets/fonts/HelveticaNeueMed', null, null, ttf);
