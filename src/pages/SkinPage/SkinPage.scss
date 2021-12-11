@@ -1,3 +1,8 @@
 ion-content {
   --background: url('../../assets/images/files/TerenceWCoverPhoto1425x950.jpg') no-repeat center;
+  position: relative;
+}
+
+ion-toolbar {
+  --opacity: 0;
 }

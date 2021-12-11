@@ -5,13 +5,8 @@ import './SkinPage.scss';
 export const SkinPage: React.FC = () => {
   return (
     <IonPage>
-      {/* <IonHeader>
-        <IonToolbar>
-          <IonTitle>Blank</IonTitle>
-        </IonToolbar>
-      </IonHeader> */}
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
+        <IonHeader>
           <IonToolbar>
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
