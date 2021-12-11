@@ -1,9 +1,8 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 
-import ExploreContainer from '../components/ExploreContainer';
-import './Home.scss';
+import './SkinPage.scss';
 
-const Home: React.FC = () => {
+export const SkinPage: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -17,10 +16,9 @@ const Home: React.FC = () => {
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer />
       </IonContent>
     </IonPage>
   );
 };
 
-export default Home;
+export default SkinPage;

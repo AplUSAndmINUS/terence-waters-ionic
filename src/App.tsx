@@ -2,7 +2,7 @@ import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 
-import Home from './pages/Home';
+import SkinPage from './pages/SkinPage/SkinPage';
 import './theme/typography.scss';
 
 /* Core CSS required for Ionic components to work properly */
@@ -33,7 +33,7 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/home">
-          <Home />
+          <SkinPage />
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />
