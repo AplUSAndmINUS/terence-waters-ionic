@@ -1,15 +1,15 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 
-import './SkinPage.scss';
+import './styled.tsx';
 
 export const SkinPage: React.FC = () => {
   return (
-    <IonPage>
-      <IonHeader>
+    <IonPage id="home-page">
+      {/* <IonHeader>
         <IonToolbar>
           <IonTitle>Blank</IonTitle>
         </IonToolbar>
-      </IonHeader>
+      </IonHeader> */}
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
