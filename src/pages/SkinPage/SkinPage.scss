@@ -3,6 +3,13 @@ ion-content {
   position: relative;
 }
 
+ion-header {
+  box-shadow: 0;
+}
+
 ion-toolbar {
   --opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
