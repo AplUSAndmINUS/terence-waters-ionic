@@ -1,6 +1,8 @@
 ion-button {
-  padding: 8px 16px;
-  --color: --ion-color-primary;
   font-family: 'Helvetica Neue Light', sans-serif;
   font-size: 1rem;
+  margin: 0 auto;
+  max-width: 400px;
+  width: 50%;
+  text-transform: lowercase;
 }

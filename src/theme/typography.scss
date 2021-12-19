@@ -119,3 +119,91 @@ pre {
     line-height: 18px !important;
   }
 }
+@media (max-width: 1300px) and (min-width: 992px) {
+  h1 {
+    font-size: 3.25rem !important;
+    letter-spacing: -0.25px !important;
+    line-height: 64px !important;
+    font-weight: 900 !important;
+    margin: 0 0 36px 0 !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+    letter-spacing: -0.25px !important;
+    line-height: 28px !important;
+  }
+
+  h3 {
+    font-size: 1.875rem !important;
+    letter-spacing: -0.25px !important;
+    line-height: 36px !important;
+  }
+
+  h4 {
+    font-size: 1.125rem !important;
+    letter-spacing: -0.15px !important;
+    line-height: 24px !important;
+  }
+
+  h5 {
+    font-size: 0.875rem !important;
+    letter-spacing: -0.15px !important;
+    line-height: 18px !important;
+  }
+
+  h6 {
+    font-size: 0.625rem !important;
+    letter-spacing: -0.1 !important;
+    line-height: 12px !important;
+  }
+
+  p {
+    font-size: 0.875rem !important;
+    line-height: 18px !important;
+  }
+}
+@media (min-width: 1300px) {
+  h1 {
+    font-size: 4.25rem !important;
+    letter-spacing: 0.5px !important;
+    line-height: 72px !important;
+    font-weight: 900 !important;
+    margin: 0 0 10rem 0 !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+    letter-spacing: -0.25px !important;
+    line-height: 28px !important;
+  }
+
+  h3 {
+    font-size: 1.875rem !important;
+    letter-spacing: -0.25px !important;
+    line-height: 36px !important;
+  }
+
+  h4 {
+    font-size: 1.125rem !important;
+    letter-spacing: -0.15px !important;
+    line-height: 24px !important;
+  }
+
+  h5 {
+    font-size: 0.875rem !important;
+    letter-spacing: -0.15px !important;
+    line-height: 18px !important;
+  }
+
+  h6 {
+    font-size: 0.625rem !important;
+    letter-spacing: -0.1 !important;
+    line-height: 12px !important;
+  }
+
+  p {
+    font-size: 0.875rem !important;
+    line-height: 18px !important;
+  }
+}
