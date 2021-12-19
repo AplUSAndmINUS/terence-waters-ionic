@@ -12,11 +12,14 @@ export const SkinPage: React.FC = () => {
             <MenuButton /> 
           </IonToolbar>
         </IonHeader>
-        <IonRow>
-          <IonCol className="ion-align-items-center ion-justify-content-center">
-            <IonRow className="ion-align-items-center ion-justify-content-center" style={{ height: '50vh'}}>Six</IonRow>
-            <IonRow className="ion-align-items-center ion-justify-content-center" style={{ height: '50vh'}}>hi there, I'm Terence Waters</IonRow>
+        <IonRow className="ion-hide-md-up" style={{ width: '100%' }}>
+          <IonCol size="12" className="ion-align-items-center ion-justify-content-center">Six Small Screen</IonCol>
+          <IonCol size="12" className="ion-align-items-center ion-justify-content-center">hi there, I'm Terence Waters
           </IonCol>
+        </IonRow>
+        <IonRow className="ion-justify-content-center ion-hide-md-down">
+          <IonCol className="ion-align-items-center ion-justify-content-center ion-hide-sm-down">hi there, I'm Terence Waters</IonCol>
+          <IonCol>Six Medium screen</IonCol>
         </IonRow>
       </IonContent>
     </IonPage>
