@@ -76,11 +76,11 @@ pre {
 }
 
 // have to override all the styles of ionic-- no typography variables
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   h1 {
     font-size: 3rem !important;
     letter-spacing: -0.25px !important;
-    line-height: 40px !important;
+    line-height: 64px !important;
     font-weight: 900 !important;
   }
 
