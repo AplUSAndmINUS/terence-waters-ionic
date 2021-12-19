@@ -30,6 +30,7 @@ export const SkinPage: React.FC = () => {
           </IonCol>
         </FullScreenRow>
         <FullScreenRow className="ion-justify-content-center ion-align-items-center ion-hide-lg-down ion-padding">
+          <IonCol>&nbsp;</IonCol>
           <IonCol className="ion-padding">
             <h3 className="ion-text-center">hi there, I'm</h3>
             <h1 className="ion-text-center ion-margin-bottom">Terence Waters</h1>
@@ -38,7 +39,6 @@ export const SkinPage: React.FC = () => {
               <IonButton color="primary">hire me!</IonButton>
             </div>
           </IonCol>
-          <IonCol>&nbsp;</IonCol>
         </FullScreenRow>
       </IonContent>
     </IonPage>
