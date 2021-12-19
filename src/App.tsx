@@ -3,7 +3,7 @@ import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 
 import SkinPage from './pages/SkinPage/SkinPage';
-import './theme/typography.scss';
+import './theme/main.scss';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
