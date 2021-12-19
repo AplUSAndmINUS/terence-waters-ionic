@@ -1,6 +1,25 @@
-ion-content {
-  --background: url('../../assets/images/files/TerenceWCoverPhoto1425x950.jpg') no-repeat 32% center / cover;
-  position: relative;
+@media (min-width: 1300px) {
+  ion-content {
+    --background: url('../../assets/images/files/TerenceWCoverPhoto1920x1080.jpg')
+      no-repeat 32% center / cover;
+    position: relative;
+  }
+}
+
+@media (max-width: 1299px) and (min-width: 993px) {
+  ion-content {
+    --background: url('../../assets/images/files/TerenceWCoverPhoto1425x802.jpg')
+      no-repeat 32% center / cover;
+    position: relative;
+  }
+}
+
+@media (max-width: 992px) {
+  ion-content {
+    --background: url('../../assets/images/files/TerenceWCoverPhoto1050x591.jpg')
+      no-repeat 32% center / cover;
+    position: relative;
+  }
 }
 
 ion-header {
