@@ -4,6 +4,7 @@ import {
   IonContent,
   IonHeader,
   IonPage,
+  IonRow,
   IonToolbar
 } from '@ionic/react';
 import MenuButton from '../../components/menu/MenuButton/MenuButton';
@@ -26,7 +27,9 @@ export const SkinPage: React.FC = () => {
             <h3 className="ion-text-center">hi there, I'm</h3>
             <h1 className="ion-text-center">Terence Waters</h1>
             <h3 className="ion-text-center">ui/ux designer, <br />web developer &amp; tutor</h3>
-            <button className="ion-center">hire me!</button>
+            <IonRow className="ion-center ion-align-items-center ion-justify-content-center ion-padding">
+              <IonButton className="ion-center ion-margin-bottom ion-margin-top" color="primary">hire me!</IonButton>
+            </IonRow>
           </IonCol>
         </FullScreenRow>
         <FullScreenRow className="ion-justify-content-center ion-align-items-center ion-hide-lg-down ion-padding">
@@ -34,10 +37,10 @@ export const SkinPage: React.FC = () => {
           <IonCol className="ion-padding">
             <h3 className="ion-text-center">hi there, I'm</h3>
             <h1 className="ion-text-center ion-margin-bottom">Terence Waters</h1>
-            <div className="ion-justify-content-center ion-align-items-center">
-              <h3 className="ion-text-center">ui/ux designer, <br />web developer &amp; tutor</h3>
-              <IonButton color="primary">hire me!</IonButton>
-            </div>
+            <h3 className="ion-text-center ion-margin-top">ui/ux designer, <br />web developer &amp; tutor</h3>
+            <IonRow className="ion-center ion-align-items-center ion-justify-content-center ion-padding">
+              <IonButton className="ion-center ion-margin-bottom ion-margin-top" color="primary">hire me!</IonButton>
+            </IonRow>
           </IonCol>
         </FullScreenRow>
       </IonContent>
