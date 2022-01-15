@@ -32,3 +32,8 @@ ion-toolbar {
   flex-direction: row;
   justify-content: flex-end;
 }
+
+h1.ion-text-center.white, h3.ion-text-center.white {
+  --color: white;
+  color: white;
+}
