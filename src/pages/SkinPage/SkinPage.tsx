@@ -7,7 +7,7 @@ import {
   IonRow,
   IonToolbar
 } from '@ionic/react';
-import MenuButton from '../../components/menu/MenuButton/MenuButton';
+import MenuButton from '../../components/menu/Menu/Menu';
 
 import './SkinPage.scss';
 import { FullScreenRow } from './styled';
@@ -17,7 +17,9 @@ export const SkinPage: React.FC = () => {
     <IonPage>
       <IonContent fullscreen>
         <IonHeader className="ion-no-border">
-          <IonToolbar className="ion-no-border" style={{ position: 'fixed', top: 0, left: 0, right: 0 }}>
+          <IonToolbar
+            className="ion-no-border"
+            style={{ position: 'fixed', top: 0, left: 0, right: 0 }}>
             <MenuButton /> 
           </IonToolbar>
         </IonHeader>
