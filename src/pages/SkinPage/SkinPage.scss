@@ -6,6 +6,14 @@
   }
 }
 
+@media (max-width: 1300px) {
+  ion-content {
+    --background: url('../../assets/images/files/TerenceWCoverPhoto1920x1080.jpg')
+      no-repeat 32% center / cover;
+    position: relative;
+  }
+}
+
 @media (max-width: 1299px) and (min-width: 993px) {
   ion-content {
     --background: url('../../assets/images/files/TerenceWCoverPhoto1425x802.jpg')
@@ -33,6 +41,7 @@ ion-toolbar {
   justify-content: flex-end;
 }
 
+// overrides dark mode behavior of turning home page text dark on default mode
 h1.ion-text-center.white, h3.ion-text-center.white {
   --color: white;
   color: white;
