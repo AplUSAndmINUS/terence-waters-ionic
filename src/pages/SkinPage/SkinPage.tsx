@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   IonButton,
   IonCol,
@@ -39,6 +39,30 @@ const SocialMedia: React.FC = () => {
 };
 
 export const SkinPage: React.FC = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const [windowSize, setWindowSize] = useState({
+    width: 0,
+    height: 0,
+  });
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight
+      })
+    }
+    window.addEventListener("resize", handleResize, false);
+    handleResize();
+    window.removeEventListener("resize", handleResize, false);
+  }, []);
+
+  useEffect(() => {
+    windowSize.width < 540
+      ? setIsMobile(true)
+      : setIsMobile(false)
+  }, [windowSize.width]);
+
   return (
     <IonPage>
       <IonContent fullscreen>

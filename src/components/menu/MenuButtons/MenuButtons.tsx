@@ -6,7 +6,11 @@ import {
   settingsSharp
 } from "ionicons/icons";
 
-export const MenuButtons: React.FC = () => {
+interface MenuButtonsProps {
+  isMobile?: boolean;
+}
+
+export const MenuButtons: React.FC<MenuButtonsProps> = ({ isMobile = false}) => {
   return (
     <div className="ion-float-right ion-margin-end">
       <IonIcon
@@ -18,7 +22,7 @@ export const MenuButtons: React.FC = () => {
           icon={settingsSharp}
         size="large" />
         <IonIcon
-          className="ion-padding-vertical ion-padding-end ion-margin"
+          className={isMobile ? "ion-padding-vertical ion-margin" : "ion-padding-vertical ion-margin ion-padding-end"}
           icon={menuSharp}
           style={{ fontSize: "36px" }} />
     </div>
