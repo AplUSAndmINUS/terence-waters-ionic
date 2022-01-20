@@ -63,6 +63,8 @@ export const SkinPage: React.FC = () => {
       : setIsMobile(false)
   }, [windowSize.width]);
 
+
+// next step: Create Routing for entire project and also pages :) 
   return (
     <IonPage>
       <IonContent fullscreen>
