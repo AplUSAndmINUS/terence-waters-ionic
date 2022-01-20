@@ -12,12 +12,6 @@
       no-repeat 32% center / cover;
     position: relative;
   }
-  ion-icon:hover {
-    --color: --ion-color-secondary;
-    opacity: 0.5;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
-  }
 }
 
 @media (max-width: 1299px) and (min-width: 993px) {
@@ -25,12 +19,6 @@
     --background: url('../../assets/images/files/TerenceWCoverPhoto1425x802.jpg')
       no-repeat 32% center / cover;
     position: relative;
-  }
-  ion-icon:hover {
-    --color: --ion-color-secondary;
-    opacity: 0.5;
-    transition: 0.5s ease-in-out;
-    cursor: pointer;
   }
 }
 
@@ -51,6 +39,13 @@ ion-toolbar {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+ion-icon:hover {
+  --color: --ion-color-secondary;
+  opacity: 0.5;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 // overrides dark mode behavior of turning home page text dark on default mode
