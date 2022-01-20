@@ -18,7 +18,7 @@ export const SkinPage: React.FC = () => {
       <IonContent fullscreen>
         <IonHeader className="ion-no-border">
           <IonToolbar
-            className="ion-no-border"
+            className="ion-no-border ion-justify-content-flex-end"
             style={{ position: 'fixed', top: 0, left: 0, right: 0 }}>
             <MenuButton /> 
           </IonToolbar>
