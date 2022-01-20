@@ -3,14 +3,36 @@ import {
   IonCol,
   IonContent,
   IonHeader,
+  IonIcon,
   IonPage,
   IonRow,
   IonToolbar
-} from '@ionic/react';
-import MenuButton from '../../components/menu/Menu/Menu';
+} from "@ionic/react";
+import {
+  logoFacebook,
+  logoInstagram,
+  logoTiktok,
+  logoTwitch,
+  logoTwitter
+} from 'ionicons/icons';
+import Menu from "../../components/menu/Menu/Menu";
 
-import './SkinPage.scss';
-import { FullScreenRow } from './styled';
+import "./SkinPage.scss";
+import { FullScreenRow } from "./styled";
+
+const SOCIAL_ICONS = [logoFacebook, logoInstagram, logoTiktok, logoTwitch, logoTwitter];
+
+const SocialMedia: React.FC = () => {
+  return (
+    <>
+      {SOCIAL_ICONS.map(item => (
+        item[0]
+          ? <IonIcon className="ion-padding-vertical ion-margin ion-padding-start" icon={item} size="large" />
+          : <IonIcon className="ion-padding-vertical ion-margin" icon={item} size="large" />
+      ))}
+    </>
+  )
+};
 
 export const SkinPage: React.FC = () => {
   return (
@@ -18,9 +40,9 @@ export const SkinPage: React.FC = () => {
       <IonContent fullscreen>
         <IonHeader className="ion-no-border">
           <IonToolbar
-            className="ion-no-border ion-justify-content-flex-end"
-            style={{ position: 'fixed', top: 0, left: 0, right: 0 }}>
-            <MenuButton /> 
+            className="ion-no-border ion-justify-content-around"
+            style={{ position: "fixed", top: 0, left: 0, right: 0 }}>
+            <Menu /> 
           </IonToolbar>
         </IonHeader>
         <FullScreenRow className="ion-hide-lg-up ion-align-items-center ion-justify-content-end ion-padding">
@@ -40,8 +62,11 @@ export const SkinPage: React.FC = () => {
             <h3 className="ion-text-center white">hi there, I'm</h3>
             <h1 className="ion-text-center white ion-margin-bottom">Terence Waters</h1>
             <h3 className="ion-text-center white ion-margin-top">ui/ux designer, <br />web developer &amp; tutor</h3>
-            <IonRow className="ion-center ion-align-items-center ion-justify-content-center ion-padding">
-              <IonButton className="ion-center ion-margin-bottom ion-margin-top" color="primary">hire me!</IonButton>
+            <IonRow className="ion-align-items-center ion-justify-content-center ion-padding">
+              <IonButton className="ion-margin-bottom ion-margin-top" color="primary">hire me!</IonButton>
+            </IonRow>
+            <IonRow className="ion-align-items-center ion-justify-content-center">
+              <SocialMedia />
             </IonRow>
           </IonCol>
         </FullScreenRow>
