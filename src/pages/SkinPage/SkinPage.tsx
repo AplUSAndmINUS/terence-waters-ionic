@@ -20,7 +20,7 @@ import Menu from "../../components/menu/Menu/Menu";
 import "./SkinPage.scss";
 import { FullScreenRow } from "./styled";
 
-const SOCIAL_ICONS = [logoFacebook, logoInstagram, logoTiktok, logoTwitch, logoTwitter];
+const SOCIAL_ICONS = [logoFacebook, logoTwitter, logoInstagram, logoTiktok, logoTwitch];
 
 const SocialMedia: React.FC = () => {
   return (
