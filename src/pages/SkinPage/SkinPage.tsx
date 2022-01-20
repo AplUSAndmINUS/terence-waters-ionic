@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   IonButton,
   IonCol,
@@ -15,8 +16,10 @@ import {
   logoTwitch,
   logoTwitter
 } from 'ionicons/icons';
-import Menu from "../../components/menu/Menu/Menu";
 
+import MenuButtons from "../../components/menu/MenuButtons/MenuButtons";
+import Menu from "../../components/menu/Menu";
+import MenuMobile from "../../components/menu/MenuMobile";
 import "./SkinPage.scss";
 import { FullScreenRow } from "./styled";
 
@@ -42,7 +45,7 @@ export const SkinPage: React.FC = () => {
           <IonToolbar
             className="ion-no-border ion-justify-content-around"
             style={{ position: "fixed", top: 0, left: 0, right: 0 }}>
-            <Menu /> 
+            <MenuButtons />
           </IonToolbar>
         </IonHeader>
         <FullScreenRow className="ion-hide-lg-up ion-align-items-center ion-justify-content-end ion-padding">

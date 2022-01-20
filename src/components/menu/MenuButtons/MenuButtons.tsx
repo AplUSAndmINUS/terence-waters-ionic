@@ -6,7 +6,7 @@ import {
   settingsSharp
 } from "ionicons/icons";
 
-export const Menu: React.FC = () => {
+export const MenuButtons: React.FC = () => {
   return (
     <div className="ion-float-right ion-margin-end">
       <IonIcon
@@ -25,4 +25,4 @@ export const Menu: React.FC = () => {
   )
 };
 
-export default Menu;
+export default MenuButtons;
