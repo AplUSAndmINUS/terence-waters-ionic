@@ -21,10 +21,16 @@ export const MenuButtons: React.FC<MenuButtonsProps> = ({ isMobile = false }) =>
           className="ion-padding-vertical ion-margin"
           icon={settingsSharp}
         size="large" />
-        <IonIcon
-          className={isMobile ? "ion-padding-vertical ion-margin" : "ion-padding-vertical ion-margin ion-padding-end"}
-          icon={menuSharp}
+      {isMobile
+        ? <IonIcon
+            className={isMobile ? "ion-padding-vertical ion-margin" : "ion-padding-vertical ion-margin ion-padding"}
+            icon={menuSharp}
           style={{ fontSize: "36px" }} />
+        : <IonIcon
+            className={isMobile ? "ion-padding-vertical ion-margin" : "ion-padding-vertical ion-margin ion-padding-end"}
+            icon={menuSharp}
+            style={{ fontSize: "36px" }} />}
+        
     </div>
   )
 };
