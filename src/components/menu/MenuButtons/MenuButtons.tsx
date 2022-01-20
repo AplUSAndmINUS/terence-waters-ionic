@@ -10,7 +10,7 @@ interface MenuButtonsProps {
   isMobile?: boolean;
 }
 
-export const MenuButtons: React.FC<MenuButtonsProps> = ({ isMobile = false}) => {
+export const MenuButtons: React.FC<MenuButtonsProps> = ({ isMobile = false }) => {
   return (
     <div className="ion-float-right ion-margin-end">
       <IonIcon

@@ -70,7 +70,7 @@ export const SkinPage: React.FC = () => {
           <IonToolbar
             className="ion-no-border ion-justify-content-around"
             style={{ position: "fixed", top: 0, left: 0, right: 0 }}>
-            <MenuButtons />
+            <MenuButtons isMobile={isMobile} />
           </IonToolbar>
         </IonHeader>
         <FullScreenRow className="ion-hide-lg-up ion-align-items-center ion-justify-content-end ion-padding">
