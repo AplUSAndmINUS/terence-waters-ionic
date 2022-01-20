@@ -11,6 +11,7 @@ import {
 } from "@ionic/react";
 import {
   logoFacebook,
+  logoGithub,
   logoInstagram,
   logoTiktok,
   logoTwitch,
@@ -23,7 +24,7 @@ import MenuMobile from "../../components/menu/MenuMobile";
 import "./SkinPage.scss";
 import { FullScreenRow } from "./styled";
 
-const SOCIAL_ICONS = [logoFacebook, logoTwitter, logoInstagram, logoTiktok, logoTwitch];
+const SOCIAL_ICONS = [logoFacebook, logoTwitter, logoInstagram, logoTiktok, logoTwitch, logoGithub];
 
 const SocialMedia: React.FC = () => {
   return (
