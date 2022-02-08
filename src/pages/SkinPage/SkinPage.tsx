@@ -5,11 +5,13 @@ import {
   IonContent,
   IonHeader,
   IonIcon,
+  IonInfiniteScroll,
   IonPage,
   IonRow,
   IonToolbar
 } from "@ionic/react";
 import {
+  chevronDownSharp,
   logoFacebook,
   logoGithub,
   logoInstagram,
@@ -18,6 +20,7 @@ import {
   logoTwitter
 } from 'ionicons/icons';
 
+import InfiniteScroll from "../../components/infinite-scroll/InfiniteScroll";
 import MenuButtons from "../../components/menu/MenuButtons/MenuButtons";
 import Menu from "../../components/menu/Menu";
 import MenuMobile from "../../components/menu/MenuMobile";
@@ -78,9 +81,9 @@ export const SkinPage: React.FC = () => {
         <FullScreenRow className="ion-hide-lg-up ion-align-items-center ion-justify-content-end ion-padding">
           <IonCol size="12">&nbsp;</IonCol>
           <IonCol size="12" className="ion-padding">
-              <h3 className="ion-text-center white">hi there, I'm</h3>
-              <h1 className="ion-text-center white">Terence Waters</h1>
-              <h3 className="ion-text-center white">ui/ux designer, <br />web developer &amp; tutor</h3>
+            <h3 className="ion-text-center white">hi there, I'm</h3>
+            <h1 className="ion-text-center white">Terence Waters</h1>
+            <h3 className="ion-text-center white">ui/ux designer, <br />web developer &amp; tutor</h3>
             <IonRow className="ion-center ion-align-items-center ion-justify-content-center ion-padding">
               <IonButton className="ion-center white ion-margin-bottom ion-margin-top" color="primary">hire me!</IonButton>
             </IonRow>
@@ -100,6 +103,12 @@ export const SkinPage: React.FC = () => {
             </IonRow>
           </IonCol>
         </FullScreenRow>
+        <IonInfiniteScroll style={{
+          position: 'absolute',
+          bottom: '50px',
+          left: '50%',
+          right: '50%'
+        }}>Testing <IonIcon color="white" name={chevronDownSharp} /></IonInfiniteScroll>
       </IonContent>
     </IonPage>
   );
