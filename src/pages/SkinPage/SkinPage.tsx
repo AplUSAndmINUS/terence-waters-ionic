@@ -94,7 +94,7 @@ export const SkinPage: React.FC = () => {
           <IonCol className="ion-padding">
             <h3 className="ion-text-center white">hi there, I'm</h3>
             <h1 className="ion-text-center white ion-margin-bottom">Terence Waters</h1>
-            <h3 className="ion-text-center white ion-margin-top">ui/ux designer, <br />web developer &amp; tutor</h3>
+            <h3 className="ion-text-center white ion-margin-top">freelance designer, <br />web developer, model, &amp; tutor</h3>
             <IonRow className="ion-align-items-center ion-justify-content-center ion-padding">
               <IonButton className="ion-margin-bottom ion-margin-top" color="primary">hire me!</IonButton>
             </IonRow>
