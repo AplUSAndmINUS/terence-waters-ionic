@@ -14,6 +14,7 @@ import Music from './pages/Music/Music';
 import NotFound from './pages/404/404';
 import Photography from './pages/Projects/Photography/Photography';
 import Portfolio from './pages/Portfolio/Portfolio';
+import Projects from './pages/Projects/Projects';
 import SkinPage from './pages/SkinPage/SkinPage';
 import './theme/main.scss';
 
@@ -45,9 +46,7 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/" component={SkinPage} />
-        <Route exact path="/home">
-          <Redirect to="/" />
-        </Route>
+        <Route exact path="/home" render={() => <Redirect to="/" />} />
         <Route exact path="/404" component={NotFound} />
         <Route exact path="/about" component={About} />
         <Route exact path="/portfolio/artwork" component={Artwork} />
@@ -60,6 +59,8 @@ const App: React.FC = () => (
         <Route exact path="/music" component={Music} />
         <Route exact path="/portfolio/photography" component={Photography} />
         <Route exact path="/portfolio" component={Portfolio} />
+        <Route exact path="/projects" component={Projects} />
+        <Route render={() => <Redirect to="/404" />} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
