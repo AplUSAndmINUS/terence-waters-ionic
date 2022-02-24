@@ -1,16 +1,12 @@
 import React from "react";
-import { IonIcon } from "@ionic/react";
+import { IonIcon, IonMenuButton } from "@ionic/react";
 import {
   menuSharp,
   searchSharp,
   settingsSharp
 } from "ionicons/icons";
 
-interface MenuButtonsProps {
-  isMobile?: boolean;
-}
-
-export const MenuButtons: React.FC<MenuButtonsProps> = ({ isMobile = false }) => {
+export const MenuButtons: React.FC = () => {
   return (
     <div className="ion-float-right ion-margin-end">
       <IonIcon
@@ -21,10 +17,7 @@ export const MenuButtons: React.FC<MenuButtonsProps> = ({ isMobile = false }) =>
         className="ion-padding-vertical ion-margin"
         icon={settingsSharp}
         size="large" />
-      <IonIcon
-        className={isMobile ? "ion-padding-vertical ion-margin" : "ion-padding-vertical ion-margin ion-padding"}
-        icon={menuSharp}
-        style={{ fontSize: "36px" }} />
+      <IonMenuButton />
     </div>
   )
 };
