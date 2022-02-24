@@ -108,7 +108,8 @@ export const SkinPage: React.FC = () => {
           bottom: '50px',
           left: '50%',
           right: '50%'
-        }}>Testing <IonIcon color="white" name={chevronDownSharp} /></IonInfiniteScroll>
+        }}>Scroll Down <IonIcon name={chevronDownSharp} />
+        </IonInfiniteScroll>
       </IonContent>
     </IonPage>
   );
