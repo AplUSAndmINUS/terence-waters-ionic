@@ -10,36 +10,15 @@ import {
   IonRow,
   IonToolbar
 } from "@ionic/react";
-import {
-  chevronDownSharp,
-  logoFacebook,
-  logoGithub,
-  logoInstagram,
-  logoTiktok,
-  logoTwitch,
-  logoTwitter
-} from 'ionicons/icons';
+import { chevronDownSharp } from 'ionicons/icons';
 
 import InfiniteScroll from "../../components/infinite-scroll/InfiniteScroll";
 import MenuButtons from "../../components/menu/MenuButtons/MenuButtons";
 import Menu from "../../components/menu/Menu";
 import MenuMobile from "../../components/menu/MenuMobile";
+import SocialMedia from "../../components/menu/SocialMedia";
 import "./SkinPage.scss";
 import { FullScreenRow } from "./styled";
-
-const SOCIAL_ICONS = [logoFacebook, logoTwitter, logoInstagram, logoTiktok, logoTwitch, logoGithub];
-
-const SocialMedia: React.FC = () => {
-  return (
-    <>
-      {SOCIAL_ICONS.map(item => (
-        item[0]
-          ? <IonIcon className="ion-padding-vertical ion-margin ion-padding-start" icon={item} size="large" />
-          : <IonIcon className="ion-padding-vertical ion-margin" icon={item} size="large" />
-      ))}
-    </>
-  )
-};
 
 export const SkinPage: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);

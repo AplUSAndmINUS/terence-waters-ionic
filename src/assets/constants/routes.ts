@@ -1,3 +1,5 @@
+import React from 'react';
+
 import About from '../../pages/About/About';
 import Artwork from '../../pages/Projects/Artwork/Artwork';
 import Blog from '../../pages/Blog/Blog';
@@ -12,8 +14,8 @@ import Photography from '../../pages/Projects/Photography/Photography';
 import Portfolio from '../../pages/Portfolio/Portfolio';
 import Projects from '../../pages/Projects/Projects';
 import SkinPage from '../../pages/SkinPage/SkinPage';
-import React from 'react';
 
+import MenuMobile from '../../components/menu/MenuMobile';
 interface Routes {
   path: string;
   component: React.FC;
@@ -75,5 +77,10 @@ export const ROUTES: Routes[] = [
   {
     path: '/projects',
     component: Projects
+  },
+  // this needs to be removed as a route once completed (5/18)
+  {
+    path: '/menu-mobile',
+    component: MenuMobile
   }
 ];
